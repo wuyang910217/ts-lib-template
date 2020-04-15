@@ -1,0 +1,46 @@
+{
+  "name": "ts-lib-template",
+  "author": "wuyang",
+  "description": "使用ts开发第三方包的模板库",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build --format cjs,esm",
+    "test": "tsdx test",
+    "lint": "tsdx lint src",
+    "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "~25.1.2",
+    "@types/node": "~12.12.27",
+    "@typescript-eslint/eslint-plugin": "~2.19.2",
+    "@typescript-eslint/parser": "~2.19.2",
+    "eslint": "~6.8.0",
+    "eslint-config-prettier": "~6.10.0",
+    "eslint-plugin-jest": "~23.7.0",
+    "husky": "^4.2.5",
+    "jest": "~25.1.0",
+    "np": "^6.2.1",
+    "prettier": "~1.19.1",
+    "tsdx": "^0.13.2",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
+}
