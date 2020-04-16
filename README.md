@@ -11,6 +11,7 @@
 
 - 本地开发 `npm start`
 - 打包 `npm run build`
+- 测试 `npm run test`
 
 ## 发布
 
@@ -20,6 +21,7 @@
 
 - 发布到npm时，默认没有上传src目录，只上传了dist目录，需要开启，在`package.json.files`里增加
 - 详细配置请查看`package.json` `.npmignore`等文件
+- 可以在`examples/`目录下进行库的测试
 
 ## 参考
 

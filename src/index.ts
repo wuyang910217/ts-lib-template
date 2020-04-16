@@ -4,6 +4,6 @@ export class MyLib {
   constructor(private name: string) {}
 
   getName(): string {
-    return this.name;
+    return 'Hi, ' + this.name;
   }
 }

@@ -9,6 +9,7 @@ dist/
 build/
 .npm/
 examples/
+test/
 
 # 文件
 README.md
